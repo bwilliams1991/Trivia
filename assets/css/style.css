@@ -1,6 +1,41 @@
+
+/* 
+color: #e0e0e0; // background color
+color: #2c2c2c; // black-ish
+color: #545454; // dark gray
+color: #ababab; // light gray
+color: #b5aaf9; // light purple
+color: #6b46e3; // dark purple
+
+FONTS
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Abel', sans-serif;
+
+*/
+
+
 body {
 	background: #e0e0e0;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: bold;
+	color: #545454;
+} 
+
+header {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
 }
+
+.header {
+	order: 1;
+	margin-left: 810px;
+	padding: 0px 10px 5px 5px;
+}
+
+
+
+
 
 .outline {
 	border: 2px solid red;
@@ -12,5 +47,49 @@ body {
 }
 
 img {
-	width: 100%;
+	width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.height {
+	height: 65px;
+}
+
+.q-counters {
+	width: 50px;
+	float: right;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.h2-options {
+	margin-top: 5px;
+}
+
+.border-right {
+	border-right: 1px solid #ababab;
+}
+
+.border-left {
+	border-left: 1px solid #ababab;
+}
+
+.light-purple {
+	color: #b5aaf9;
+}
+
+.dark-purple {
+	color: #6b46e3;
+}
+
+.round-corners {
+	border-radius: 25px;
+	border: 2px solid #2c2c2c;
+	padding: 14px; 
+	width: 45px;
+	height: 45px;
 }

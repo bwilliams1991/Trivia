@@ -12,29 +12,80 @@
 	 crossorigin="anonymous">
 	<link rel="stylesheet" href="./assets/css/style.css">
 
+	<!-- Linking Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Abel|Yanone+Kaffeesatz" rel="stylesheet">
 
-	<title>NES Trivia</title>
+	<title>SNES Trivia</title>
 </head>
 
 <body>
 	<header>
-		<h1>Super NES Trivia</h1>
+		<div class="header">
+			<h1>Super NES Trivia</h1>
+		</div>
 	</header>
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3 outline">
-
+			<div class="col-md-3 outline" id="timer">
+				Timer
 			</div>
-			<div class="col-md-9 outline">
-
+			<div class="col-md-9 outline" id="questions">
+				questions display
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-3"></div>
+			<div class="col-md-3 outline2" id="stats">stats
 
-			<div class="col-md-9 outline2">
+				<div class="q-counters">
+					<img src="./assets/images/snes_connector_drawing_rotate.png" alt="controller">
+
+					<img src="./assets/images/snes_connector_drawing.png" alt="controller">
+				</div>
+
+			</div>
+
+			<div class="col-md-9 outline2" id="buttons">
 				<img src="./assets/images/8549077600_6094895fc2_o.png" alt="controller">
+
+				<div class="row">
+
+					<div class="col-md-1">
+						<h2 class="align-right h2-options light-purple round-corners">X</h2>
+					</div>
+
+					<div class="col-md-4 height border-right">
+
+					</div>
+
+					<div class="col-md-4 height border-left">
+
+					</div>
+
+					<div class="col-md-3">
+						<h2 class="h2-options dark-purple round-corners">Y</h2>
+					</div>
+					
+				</div>
+				<div class="row">
+
+					<div class="col-md-3">
+						<h2 class="align-right h2-options light-purple round-corners">B</h2>
+					</div>
+
+					<div class="col-md-4 height border-right">
+
+					</div>
+
+					<div class="col-md-4 height border-left">
+
+					</div>
+
+					<div class="col-md-1">
+						<h2 class="h2-options dark-purple round-corners">A</h2>
+					</div>
+
+				</div>
 			</div>
 		</div>
 	</div>
