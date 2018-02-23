@@ -33,17 +33,17 @@ header {
 	padding: 0px 10px 5px 5px;
 }
 
+.controller {
 
-
-
+}
 
 .outline {
-	border: 2px solid red;
-	height: 100px;
+	/* border: 2px solid red; */
+	height: 150px;
 }
 .outline2 {
-	border: 2px solid red;
-	height: 500px;
+	/* border: 2px solid red; */
+	height: 450px;
 }
 
 img {
@@ -66,17 +66,17 @@ img {
 	text-align: right;
 }
 
-.h2-options {
+.button-options {
 	margin-top: 5px;
 }
 
-.border-right {
+/* .border-right {
 	border-right: 1px solid #ababab;
 }
 
 .border-left {
 	border-left: 1px solid #ababab;
-}
+} */
 
 .light-purple {
 	color: #b5aaf9;
@@ -86,10 +86,14 @@ img {
 	color: #6b46e3;
 }
 
-.round-corners {
+/* .round-corners {
 	border-radius: 25px;
 	border: 2px solid #2c2c2c;
 	padding: 14px; 
 	width: 45px;
 	height: 45px;
+} */
+
+.answer-button {
+	color: rebeccapurple;
 }

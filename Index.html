@@ -27,31 +27,46 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3 outline" id="timer">
-				Timer
+
+			<div class="col-md-3 outline">
+				<h2>Time Remaining: <span class="timer" id="timer"></span></h2>
+
 			</div>
-			<div class="col-md-9 outline" id="questions">
-				questions display
+
+			<div class="col-md-9 outline">
+
+				<h3>Question:</h3>
+
+				<div id="display"></div>
+
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-3 outline2" id="stats">stats
 
-				<div class="q-counters">
+		<div class="row">
+			<div class="col-md-3 outline2" id="stats">
+
+				<h2>Stats</h2>
+
+				<button id="start">Start</button>
+
+				<!-- <div class="q-counters">
 					<img src="./assets/images/snes_connector_drawing_rotate.png" alt="controller">
 
 					<img src="./assets/images/snes_connector_drawing.png" alt="controller">
-				</div>
+				</div> -->
 
 			</div>
 
 			<div class="col-md-9 outline2" id="buttons">
-				<img src="./assets/images/8549077600_6094895fc2_o.png" alt="controller">
-
+				<img src="./assets/images/8549077600_6094895fc2_o.png" alt="controller" class="controller">
+				<button class="button-options dark-purple round-corners btn btn-link">Y</button>
+				<button class="align-right button-options light-purple round-corners btn btn-link">B</button>
+				<button class="align-right button-options light-purple round-corners btn btn-link">X</button>
+				<button class="button-options dark-purple round-corners btn btn-link">A</button>
 				<div class="row">
 
 					<div class="col-md-1">
-						<h2 class="align-right h2-options light-purple round-corners">X</h2>
+						
 					</div>
 
 					<div class="col-md-4 height border-right">
@@ -63,14 +78,14 @@
 					</div>
 
 					<div class="col-md-3">
-						<h2 class="h2-options dark-purple round-corners">Y</h2>
+						
 					</div>
-					
+
 				</div>
 				<div class="row">
 
 					<div class="col-md-3">
-						<h2 class="align-right h2-options light-purple round-corners">B</h2>
+						
 					</div>
 
 					<div class="col-md-4 height border-right">
@@ -82,7 +97,7 @@
 					</div>
 
 					<div class="col-md-1">
-						<h2 class="h2-options dark-purple round-corners">A</h2>
+						
 					</div>
 
 				</div>
