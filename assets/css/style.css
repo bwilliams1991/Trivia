@@ -33,17 +33,43 @@ header {
 	padding: 0px 10px 5px 5px;
 }
 
-.controller {
-
+h2 {
+	margin-top: 5px;
+	margin-bottom: 0px;
 }
 
-.outline {
-	/* border: 2px solid red; */
+.controller {
+/* modify controller image */
+position: relative;
+margin: auto;
+z-index: 0;
+width: 90%;
+}
+
+hr {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border: 1px solid #545454;
+}
+
+.time-div {
+	height: 70px;
+}
+
+.question-div {
 	height: 150px;
 }
-.outline2 {
+
+.stats-div {
+	height: 300px;
+}
+
+.buttons-div {
+	height: 345px;
+}
+
+.outline-helper {
 	/* border: 2px solid red; */
-	height: 450px;
 }
 
 img {
@@ -70,14 +96,6 @@ img {
 	margin-top: 5px;
 }
 
-/* .border-right {
-	border-right: 1px solid #ababab;
-}
-
-.border-left {
-	border-left: 1px solid #ababab;
-} */
-
 .light-purple {
 	color: #b5aaf9;
 }
@@ -86,14 +104,36 @@ img {
 	color: #6b46e3;
 }
 
-/* .round-corners {
-	border-radius: 25px;
-	border: 2px solid #2c2c2c;
-	padding: 14px; 
-	width: 45px;
-	height: 45px;
-} */
-
 .answer-button {
 	color: rebeccapurple;
 }
+
+#button-0 {
+	position: absolute;
+	z-index: 1;
+	top: 151px;
+	right: 105px;
+}
+
+#button-1 {
+	position: absolute;
+	z-index: 1;
+	top: 280px;
+	right: 264px;
+}
+
+#button-2 {
+	position: absolute;
+	z-index: 1;
+	top: 94px;
+	right: 165px;
+}
+
+#button-3 {
+	position: absolute;
+	z-index: 1;
+	top: 225px;
+	right: 325px;
+}
+
+

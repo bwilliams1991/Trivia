@@ -1,5 +1,25 @@
 $(document).ready(function () {
 
+
+	$("#start").on("click", function(){
+		$("#start").remove();
+		theWholeGame.addQA();
+	});
+	
+	$("#reset").on("click", function(){
+		theWholeGame.startOver();
+	});
+	
+	
+	// on click of answer buttons links to clickedOn funct.
+	$(document).on("click", '.answer-button', function(e){
+		theWholeGame.clickedOn(e);
+	});
+	
+	// theWholeGame();
+	
+
+
 // // Varible Declarations
 // --------------------------------------------------------------------------------------
 
@@ -89,7 +109,7 @@ var questions = [
 var theWholeGame = {
 	questions: questions,
 	currentQA: 0,
-	timer: 5, //seconds
+	timer: 30, //seconds
 	numCorrect: 0,
 	numInCorrect: 0,
 	unanswered: 0,
@@ -114,27 +134,29 @@ var theWholeGame = {
 			// create timer
 		// adding timer var to an interval of 1 sec
 		timer = setInterval(theWholeGame.finalCountdown, 1000);
+		// displays the timer at timer
 		$("#timer").append(" " + timer);
 
-
+		// displays the question to the page
 		$("#display").html("<h2>" + questions[theWholeGame.currentQA].question + "</h2>");
 
 		// adding buttons dynamically each time a new question is loaded
-		for(var i = 0; i < questions[theWholeGame.currentQA]; i++) {
-			$("#buttons").append
+		for(var i = 0; i < questions[theWholeGame.currentQA].answers.length; i++) {
 
-			// $('#buttons').append('<button class="answer-button" id="button-' + i + '" data-name="' + questions[theWholeGame.currentQA].answers[i] + '">' + questions[theWholeGame.currentQA].answers[i] + '</button>');
+			// adds buttons to the page with an answer in each
+			$('#buttons').append('<button class="answer-button" id="button-' + i + '" data-name="' + questions[theWholeGame.currentQA].answers[i] + '">' + questions[theWholeGame.currentQA].answers[i] + '</button>');
+// THE BUTTONS REMAIN ON THE PAGE AT NEW THE QUESTION
+
 		}
 
 	},
 	nextQA: function() {
 
 		// reset timer
-		theWholeGame.timer = 5;
+		theWholeGame.timer = 30;
 		$("#timer").html(theWholeGame.timer);
 
 		// 
-		$("#timer").html(theWholeGame.timer);
 		theWholeGame.currentQA++;
 		theWholeGame.addQA();
 
@@ -159,7 +181,8 @@ var theWholeGame = {
 		$("#stats").append("<h3>Unanswered: " + theWholeGame.unanswered + "</h3>");
 		$("#stats").append("<button id='reset'>RESET</button>");
 	},
-	clickedOn: function() {
+
+	clickedOn: function(e) {
 		clearInterval(timer);
 		if ($(e.target).data("name") == questions[theWholeGame.currentQA].correctAnswer) {
 			theWholeGame.yourRight();
@@ -167,6 +190,7 @@ var theWholeGame = {
 			theWholeGame.yourWrong();
 		};
 	},
+
 	yourRight: function() {
 		// testing
 		console.log("yep");
@@ -180,6 +204,7 @@ var theWholeGame = {
 			setTimeout(theWholeGame.nextQA, 3000);
 		};
 	},
+
 	yourWrong: function() {
 			// testing
 			console.log("nope");
@@ -193,10 +218,17 @@ var theWholeGame = {
 		} else {
 			setTimeout(theWholeGame.nextQA, 3000);
 		}
-
 	},
+
 	startOver: function() {
-		
+	currentQA = 0;
+	timer = 30; //seconds
+	numCorrect = 0;
+	numInCorrect = 0;
+	unanswered = 0;
+	
+	// stats.remove();
+	theWholeGame.addQA();
 	}
 }
 
@@ -227,22 +259,6 @@ var theWholeGame = {
 // Process
 // --------------------------------------------------------------------------------------
 
-$("#start").on("click", function(){
-	$("#start").remove();
-	theWholeGame.addQA();
-});
-
-$("#reset").on("click", function(){
-	theWholeGame.startOver();
-});
-
-
-// on click of answer buttons links to clickedOn funct.
-$(document).on("click", '.answer-button', function(e){
-	theWholeGame.clickedOn(e);
-});
-
-// theWholeGame();
 
 
 });

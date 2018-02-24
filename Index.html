@@ -28,14 +28,16 @@
 	<div class="container">
 		<div class="row">
 
-			<div class="col-md-3 outline">
+			<div class="col-md-3 outline-helper time-div">
 				<h2>Time Remaining: <span class="timer" id="timer"></span></h2>
 
 			</div>
 
-			<div class="col-md-9 outline">
+			<div class="col-md-9 outline-helper question-div">
 
 				<h3>Question:</h3>
+
+				<hr>
 
 				<div id="display"></div>
 
@@ -43,12 +45,15 @@
 		</div>
 
 		<div class="row">
-			<div class="col-md-3 outline2" id="stats">
+			<div class="col-md-3 outline-helper stats-div" id="stats">
 
 				<h2>Stats</h2>
 
+				<hr>
+
 				<button id="start">Start</button>
 
+				<!-- add for in-game question counter/status -->
 				<!-- <div class="q-counters">
 					<img src="./assets/images/snes_connector_drawing_rotate.png" alt="controller">
 
@@ -57,48 +62,17 @@
 
 			</div>
 
-			<div class="col-md-9 outline2" id="buttons">
+			<div class="col-md-9 outline-helper buttons-div" id="buttons">
 				<img src="./assets/images/8549077600_6094895fc2_o.png" alt="controller" class="controller">
-				<button class="button-options dark-purple round-corners btn btn-link">Y</button>
-				<button class="align-right button-options light-purple round-corners btn btn-link">B</button>
-				<button class="align-right button-options light-purple round-corners btn btn-link">X</button>
-				<button class="button-options dark-purple round-corners btn btn-link">A</button>
-				<div class="row">
 
-					<div class="col-md-1">
-						
-					</div>
+				<!-- unneeded the js buttons work -->
+				<!-- <button class="button-options dark-purple round-corners btn btn-link" value="y">Y</button>
 
-					<div class="col-md-4 height border-right">
+				<button class="align-right button-options light-purple round-corners btn btn-link" value="b">B</button>
 
-					</div>
+				<button class="align-right button-options light-purple round-corners btn btn-link" value="x">X</button>
 
-					<div class="col-md-4 height border-left">
-
-					</div>
-
-					<div class="col-md-3">
-						
-					</div>
-
-				</div>
-				<div class="row">
-
-					<div class="col-md-3">
-						
-					</div>
-
-					<div class="col-md-4 height border-right">
-
-					</div>
-
-					<div class="col-md-4 height border-left">
-
-					</div>
-
-					<div class="col-md-1">
-						
-					</div>
+				<button class="button-options dark-purple round-corners btn btn-link" value="a">A</button> -->
 
 				</div>
 			</div>
